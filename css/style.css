@@ -144,6 +144,145 @@ body {
   line-height: 26px;
 }
 
+/* Внутренняя страница. Шапка основного содежимого */
+.main-header {
+  background-color: #abd6ef;
+  background-image: url("../images/catalog/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.range-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.range-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.range-title {
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button-reset {
+  font-size: 18px;
+  line-height: 23px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+/* Каталог */
+
+.filter-result {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting-control {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.product-header {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+}
+
+.product-info {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.product-rating {
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.in-favorites {
+  background-color: #7db54f;
+}
+
+/* Пагинация */
+.load-more {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #83b3d3;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-select {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.pagination-select select {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+/* Подписка на внутренней странице */
+.inner-page .subscribe-description {
+  color: #333333;
+}
 
 /* Футер */
 .footer-phone {
