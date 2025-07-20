@@ -14,12 +14,39 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  /* padding: 0 40px; */
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .button {
@@ -38,6 +65,18 @@ body {
 }
 
 /* Шапка сайта */
+.main-navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -45,22 +84,44 @@ body {
   text-decoration: none;
 }
 
+.logo-link {
+  margin-right: 30px;
+}
+
+.site-navigation {
+  max-width: 597px;
+}
+
+.user-navigation {
+  margin-left: auto;
+}
+
 /* HERO */
 
 .hero {
+  padding-top: 51px;
+  padding-bottom: 82px;
+  text-align: center;
   background-color: #abd6ef;
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
+.hero-image {
+  vertical-align: middle;
+}
+
 /* Преимущества */
 
 .features {
+  padding-top: 63px;
   text-align: center;
 }
 
 .features-title {
+  margin: 0;
+  margin-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -68,7 +129,15 @@ body {
 }
 
 .features-description {
+  margin: 0;
+  margin-bottom: 80px;
   line-height: 36px;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .features-item h3,
@@ -105,14 +174,23 @@ body {
 }
 
 /* Бронирование */
+.booking {
+  padding-top: 91px;
+  padding-bottom: 93px;
+  text-align: center;
+}
 
 .booking-title {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .booking-description {
+  margin: 0;
+  margin-bottom: 56px;
   font-size: 20px;
   color: #333333;
 }
@@ -124,6 +202,11 @@ body {
 
 /* Подписка */
 
+.subscribe {
+  padding: 94px 0;
+  text-align: center;
+}
+
 .index-page .subscribe {
   color: #ffffff;
   background-color: #abd6ef;
@@ -133,10 +216,17 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 30px;
   line-height: 35px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.subscribe-description {
+  margin: 0;
+  margin-bottom: 46px;
 }
 
 .subscribe-input {
@@ -297,6 +387,18 @@ body {
 }
 
 /* Футер */
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+}
+
+.social-list {
+  max-width: 210px;
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
