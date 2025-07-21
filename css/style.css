@@ -248,17 +248,26 @@ body {
 
 /* Внутренняя страница. Шапка основного содежимого */
 .main-header {
+  padding: 35px 72px 83px;
+  color: #ffffff;
   background-color: #abd6ef;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #ffffff;
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 68px;
   font-weight: 700;
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -266,6 +275,22 @@ body {
   line-height: 21px;
   color: inherit;
   text-decoration: none;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.filter-fieldset {
+  width: 190px;
+  margin: 0;
+  margin-right: 27px;
+  padding: 0;
+}
+
+.filter-price {
+  width: 287px;
+  margin-left: 95px;
 }
 
 .filter-title {
@@ -297,6 +322,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.filter-buttons {
+  align-self: flex-end;
+  margin-left: auto;
+  text-align: right;
+}
+
 .filter-button-reset {
   font-size: 18px;
   line-height: 23px;
@@ -307,7 +338,19 @@ body {
 
 /* Каталог */
 
+.catalog {
+  padding: 50px 72px 0;
+}
+
+.catalog-sort {
+  display: flex;
+  margin-bottom: 56px;
+}
+
 .filter-result {
+  width: 450px;
+  margin: 0;
+  margin-right: 79px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
@@ -315,9 +358,25 @@ body {
 }
 
 .sorting-control {
+  width: 287px;
+}
+
+.sorting-control {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+}
+
+.show-button-list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
 }
 
 .product-header {
@@ -353,6 +412,18 @@ body {
 .load-more {
   font-size: 20px;
   line-height: 26px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 73px;
+  padding-top: 30px;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -401,10 +472,11 @@ body {
   padding: 40px 0 30px;
 }
 
-/* .social-list {
- max-width: 210px;
- } */
-
+.social-list {
+ /* max-width: 210px; */
+  margin: 0;
+  padding: 0;
+ }
 
 .footer-phone {
   font-size: 40px;
