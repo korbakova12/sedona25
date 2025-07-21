@@ -203,11 +203,11 @@ body {
 /* Подписка */
 
 .subscribe {
-  padding: 94px 0;
   text-align: center;
 }
 
 .index-page .subscribe {
+  padding: 94px 0;
   color: #ffffff;
   background-color: #abd6ef;
   background-image: url("../images/index-subsrcibe.jpg");
@@ -382,6 +382,10 @@ body {
 }
 
 /* Подписка на внутренней странице */
+.inner-page .subscribe {
+  margin-bottom: 140px;
+}
+
 .inner-page .subscribe-description {
   color: #333333;
 }
