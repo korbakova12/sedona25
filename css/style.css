@@ -388,20 +388,24 @@ body {
 
 /* Футер */
 .page-footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* display: flex; */
+  /* justify-content: space-between; */
   width: 1056px;
   margin: 0 auto;
   padding: 40px 0 30px;
 }
 
-.social-list {
-  max-width: 210px;
-}
+/* .social-list {
+ max-width: 210px;
+ } */
+
 
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  text-align: center;
 }
