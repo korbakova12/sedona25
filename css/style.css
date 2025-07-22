@@ -61,23 +61,31 @@ body {
 }
 
 .button-secondary {
+  padding-top: 9px;
+  padding-bottom: 8px;
   background-color: #756257;
 }
 
 /* Шапка сайта */
 .main-navigation {
   display: flex;
+  align-items: flex-start;
   width: 1060px;
   margin: 0 auto;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-size: 20px;
   font-weight: 700;
   color: inherit;
@@ -85,7 +93,12 @@ body {
 }
 
 .logo-link {
+  display: block;
   margin-right: 30px;
+}
+
+.logo {
+  display: block;
 }
 
 .site-navigation {
@@ -94,6 +107,12 @@ body {
 
 .user-navigation {
   margin-left: auto;
+}
+
+.user-navigation .navigation-link {
+  width: 42px;
+  /* height: 66px; */
+  box-sizing: border-box;
 }
 
 /* HERO */
@@ -142,12 +161,27 @@ body {
 
 .features-item h3,
 .features-item h4 {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
+.features-item h3 {
+  margin-bottom: 30px;
+}
+
+.features-item h4 {
+  margin-bottom: 20px;
+}
+
+.features-item p {
+  margin: 0;
+}
+
 .features-item {
+  padding-top: 98px;
+  /* padding-bottom: 87px; */
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -265,9 +299,16 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 45px;
   padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 26px;
 }
 
 .breadcrumbs-link {
@@ -368,15 +409,24 @@ body {
 }
 
 .show-button-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: auto;
   padding: 0;
+  list-style-type: none;
+}
+
+.show-button {
+  width: 48px;
+  height: 48px;
 }
 
 .product-list {
   margin: 0;
   padding: 0;
   padding-bottom: 34px;
+  list-style-type: none;
 }
 
 .product-header {
@@ -422,11 +472,24 @@ body {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 55px;
+  height: 55px;
+  box-sizing: border-box;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -444,6 +507,10 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+}
+
+.pagination-select-label {
+  margin-right: 51px;
 }
 
 .pagination-select select {
@@ -474,8 +541,17 @@ body {
 
 .social-list {
  /* max-width: 210px; */
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+ }
+
+ .social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
  }
 
 .footer-phone {
