@@ -216,8 +216,10 @@ body {
   padding-bottom: 82px;
   text-align: center;
   background-color: #abd6ef;
-  background-image: url("../images/hero-background.jpg");
+  background-image: url("../images/hero-divider.svg"),
+  url("../images/hero-background.jpg");
   background-repeat: no-repeat;
+  background-position: bottom 0px left 0%, bottom;
   background-size: 100% auto;
 }
 
