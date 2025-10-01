@@ -476,6 +476,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+
 /* Внутренняя страница. Шапка основного содежимого */
 .main-header {
   padding: 35px 72px 83px;
@@ -596,9 +597,6 @@ body {
 
 .sorting-control {
   width: 287px;
-}
-
-.sorting-control {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -739,19 +737,18 @@ body {
 }
 
 .social-list {
- /* max-width: 210px; */
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
- }
+}
 
- .social-link {
+.social-link {
   display: block;
   width: 40px;
   height: 40px;
- }
+}
 
 .footer-phone {
   font-size: 40px;
