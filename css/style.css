@@ -236,9 +236,9 @@ body {
   text-align: center;
   background-color: #abd6ef;
   background-image: url("../images/hero-divider.svg"),
-  url("../images/hero-background.jpg");
+    url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom 0px left 0%, bottom;
+  background-position: bottom 0 left 0%, bottom;
   background-size: 100% auto;
 }
 
@@ -361,7 +361,7 @@ body {
 }
 
 .features-content::before {
-  content: "— №" counter(features)" —";
+  content: "— №" counter(features) "—";
 }
 
 .features-item-large img {
