@@ -404,6 +404,9 @@ body {
 }
 
 .booking-button {
+  min-width: 340px;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
 }
