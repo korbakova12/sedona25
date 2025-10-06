@@ -880,6 +880,10 @@ body {
   margin-bottom: 140px;
 }
 
+.inner-page .subscribe-title {
+  margin-bottom: 46px;
+}
+
 .inner-page .subscribe-description {
   color: #333333;
 }
