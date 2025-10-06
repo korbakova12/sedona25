@@ -619,6 +619,7 @@ body {
 
 .catalog-sort {
   display: flex;
+  align-items: center;
   margin-bottom: 56px;
 }
 
@@ -634,9 +635,17 @@ body {
 
 .sorting-control {
   width: 287px;
+  padding: 12px 19px;
+  font-family: inherit;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 18px;
   color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url("../images/catalog/sorting-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top 18px right 18px;
+  appearance: none;
 }
 
 .show-button-list {
