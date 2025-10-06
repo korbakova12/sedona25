@@ -901,9 +901,38 @@ body {
 }
 
 .social-link {
+  position: relative;
   display: block;
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  fill: #83b3d3;
+}
+
+.social-link:hover .social-icon {
+  fill: #68a2ca;
+}
+
+.social-link:focus {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.social-link:focus .social-icon {
+  fill: #68a2ca;
+}
+
+.social-link:active .social-icon {
+  fill-opacity: 0.3;
 }
 
 .footer-phone {
