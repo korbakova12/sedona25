@@ -792,6 +792,7 @@ body {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 650px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -799,6 +800,10 @@ body {
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-link {
@@ -814,11 +819,24 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #83b3d3;
+  border-radius: 4px;
 }
 
 .pagination-link-current {
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.pagination-link[href]:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  outline: 3px solid #756257;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-select {
@@ -832,9 +850,26 @@ body {
 }
 
 .pagination-select select {
+  width: 160px;
+  padding: 12px 17px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url("../images/catalog/sorting-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top 20px right 20px;
+}
+
+.pagination-select select:hover,
+.pagination-select select:focus {
+  border-color: #83b3d3;
+}
+
+.pagination-select select:active {
+  color: rgba(51, 51, 51, 0.3);
 }
 
 /* Подписка на внутренней странице */
