@@ -52,6 +52,7 @@ body {
 .button {
   display: block;
   padding: 8px 15px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
