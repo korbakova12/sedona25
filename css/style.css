@@ -238,8 +238,8 @@ body {
   background-image: url("../images/hero-divider.svg"),
     url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom 0 left 0%, bottom;
-  background-size: 100% auto;
+  background-position: 100% 100.05%, bottom;
+  background-size: 100% auto, cover;
 }
 
 .hero-image {
@@ -423,7 +423,7 @@ body {
   background-color: #abd6ef;
   background-image: url("../images/index-subsrcibe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .subscribe-title {
@@ -484,7 +484,7 @@ body {
   background-color: #abd6ef;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .page-title {
