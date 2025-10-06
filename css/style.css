@@ -524,6 +524,17 @@ body {
   margin: 0;
   margin-right: 27px;
   padding: 0;
+  border: none;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-item {
+  margin-bottom: 16px;
 }
 
 .filter-price {
@@ -532,6 +543,7 @@ body {
 }
 
 .filter-title {
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -563,15 +575,40 @@ body {
 .filter-buttons {
   align-self: flex-end;
   margin-left: auto;
-  text-align: right;
+}
+
+.filter-button {
+  min-width: 191px;
+  margin-bottom: 20px;
+  padding: 16px 15px;
+  line-height: 16px;
+}
+
+.filter-button:focus {
+  outline: 3px solid #ffffff;
+  background-color: #68a2ca;
 }
 
 .filter-button-reset {
+  min-width: 191px;
   font-size: 18px;
   line-height: 23px;
   color: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.filter-button-reset:hover {
+  opacity: 0.6;
+}
+
+.filter-button-reset:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.filter-button-reset:active {
+  opacity: 0.3;
 }
 
 /* Каталог */
