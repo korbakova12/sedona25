@@ -519,15 +519,17 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin-right: 26px;
 }
 
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
+  top: 50%;
   right: -18px;
+  transform: translateY(-50%);
   width: 5px;
   height: 8px;
   background-image: url("../images/catalog/breadcrumbs-arrow.svg");
@@ -548,10 +550,12 @@ body {
 }
 
 .breadcrumbs-item:first-child .breadcrumbs-link {
-  width: 12px;
-  height: 12px;
+  width: 22px;
+  height: 22px;
   background-image: url("../images/catalog/breadcrumbs-home.svg");
   background-repeat: no-repeat;
+  background-position: left 0 center;
+  margin-right: -10px;
 }
 
 .breadcrumbs-link:hover {
