@@ -125,7 +125,7 @@ body {
 .navigation-link {
   position: relative;
   display: block;
-  padding: 17px;
+  padding: 20px 17px;
   font-size: 20px;
   font-weight: 700;
   color: inherit;
@@ -135,7 +135,7 @@ body {
 .navigation-link-current::after {
   position: absolute;
   right: 17px;
-  bottom: -3px;
+  bottom: 0;
   left: 17px;
   height: 2px;
   content: "";
@@ -198,6 +198,10 @@ body {
   width: 42px;
   height: 65px;
   box-sizing: border-box;
+}
+
+.user-navigation .favourite {
+  width: 44px;
 }
 
 .navigation-icon {
