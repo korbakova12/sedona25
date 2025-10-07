@@ -727,6 +727,27 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+}
+
+.show-button:hover,
+.show-button:focus-visible,
+.show-button:active {
+  border-color: #83b3d3;
+}
+
+.tile {
+  background-image: url("../images/catalog/mode-tile.svg");
+}
+
+.slide {
+  background-image: url("../images/catalog/mode-slideshow.svg");
+}
+
+.list {
+  background-image: url("../images/catalog/mode-list.svg");
 }
 
 .show-button-current {
@@ -961,6 +982,7 @@ body {
   background-image: url("../images/catalog/sorting-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 20px right 20px;
+  outline: none;
 }
 
 .pagination-select select:hover,
