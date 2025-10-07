@@ -70,13 +70,14 @@ body {
   cursor: pointer;
 }
 
+.button:focus-visible {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
-}
-
-.button:focus-visible {
-  outline: 3px solid #756257;
 }
 
 .button:disabled {
@@ -95,6 +96,7 @@ body {
 .button-secondary:focus-visible {
   outline: 3px solid #83b3d3;
   outline-offset: 0;
+  background-color: #615048;
 }
 
 .button-secondary:active {
@@ -168,16 +170,16 @@ body {
   margin-bottom: -5px;
 }
 
-.logo-link:hover {
+.logo-link[href]:hover {
   opacity: 0.6;
 }
 
-.logo-link:active {
-  opacity: 0.3;
+.logo-link[href]:focus-visible {
+  outline: 2px solid #756257;
 }
 
-.logo-link:focus-visible {
-  outline: 2px solid #756257;
+.logo-link[href]:active {
+  opacity: 0.3;
 }
 
 .logo {
@@ -463,7 +465,13 @@ body {
 }
 
 .subscribe-input:focus-visible {
+  background-color: #e5e5e5;
   outline: 3px solid #83b3d3;
+}
+
+.input--error {
+  outline: 2px solid #ff5757;
+  outline-offset: -2px;
 }
 
 .subscribe-input::placeholder {
@@ -585,7 +593,7 @@ body {
   line-height: 16px;
 }
 
-.filter-button:focus {
+.filter-button:focus-visible {
   outline: 3px solid #ffffff;
   background-color: #68a2ca;
 }
@@ -604,7 +612,7 @@ body {
   opacity: 0.6;
 }
 
-.filter-button-reset:focus {
+.filter-button-reset:focus-visible {
   outline: 3px solid #83b3d3;
 }
 
@@ -647,6 +655,16 @@ body {
   background-repeat: no-repeat;
   background-position: top 18px right 18px;
   appearance: none;
+  outline: none;
+}
+
+.sorting-control:hover,
+.sorting-control:focus-visible {
+  border-color: #83b3d3;
+}
+
+.sorting-control:active {
+  opacity: 0.3;
 }
 
 .show-button-list {
@@ -697,6 +715,19 @@ body {
 .product-header {
   color: inherit;
   text-decoration: none;
+  outline: none;
+}
+
+.product-header:hover {
+  opacity: 0.6;
+}
+
+.product-header:focus-visible .product-img {
+  outline: 3px solid #83b3d3;
+}
+
+.product-header:active {
+  opacity: 0.3;
 }
 
 .product-img {
@@ -773,8 +804,28 @@ body {
   width: 143px;
 }
 
+.product-button-favourites:hover,
+.product-button-favourites:active {
+  outline: 1px solid #756257;
+  outline-offset: -1px;
+}
+
 .in-favorites {
   background-color: #7db54f;
+}
+
+.in-favorites:hover {
+  background-color: #6c9e42;
+}
+
+.in-favorites:focus-visible {
+  background-color: #6c9e42;
+  outline: 3px solid #756257;
+}
+
+.in-favorites:active {
+  background-color: #6c9e42;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Пагинация */
@@ -823,6 +874,7 @@ body {
   text-decoration: none;
   background-color: #83b3d3;
   border-radius: 4px;
+  outline: none;
 }
 
 .pagination-link-current {
@@ -834,11 +886,13 @@ body {
   background-color: #68a2ca;
 }
 
-.pagination-link:focus {
+.pagination-link[href]:focus-visible {
+  background-color: #68a2ca;
   outline: 3px solid #756257;
 }
 
-.pagination-link:active {
+.pagination-link[href]:active {
+  background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -867,7 +921,7 @@ body {
 }
 
 .pagination-select select:hover,
-.pagination-select select:focus {
+.pagination-select select:focus-visible {
   border-color: #83b3d3;
 }
 
@@ -929,12 +983,12 @@ body {
   fill: #68a2ca;
 }
 
-.social-link:focus {
+.social-link:focus-visible {
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
-.social-link:focus .social-icon {
+.social-link:focus-visible .social-icon {
   fill: #68a2ca;
 }
 
@@ -948,4 +1002,43 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
+  border-radius: 10px;
+}
+
+.footer-phone:hover {
+  color: #756257;
+}
+
+.footer-phone:focus-visible {
+  color: #756257;
+  outline: 3px solid #83b3d3;
+  outline-offset: 10px;
+}
+
+.footer-phone:active {
+  opacity: 0.3;
+}
+
+.developer {
+  justify-self: end;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.developer-icon {
+  fill: #000000;
+}
+
+.developer:hover .developer-icon,
+.developer:focus-visible .developer-icon {
+  fill: #756257;
+}
+
+.developer:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: 10px;
+}
+
+.developer:active .developer-icon {
+  fill-opacity: 0.3;
 }
