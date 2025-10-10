@@ -605,9 +605,66 @@ body {
   font-weight: 700;
 }
 
+.control {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .control-label {
   font-size: 18px;
   line-height: 23px;
+}
+
+.control-input {
+  position: relative;
+  appearance: none;
+  margin-right: 20px;
+  outline: none;
+}
+
+.control-input::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked::before {
+  background-image: url("../images/catalog/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]::before {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  /* background-position: center; */
+}
+
+.control:hover .control-input::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:focus::before {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-input::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-input {
