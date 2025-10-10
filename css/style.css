@@ -449,7 +449,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  width: 684px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -483,7 +483,7 @@ body {
 }
 
 .subscribe-button {
-  min-width: 232px;
+  min-width: 200px;
   font-size: 20px;
   line-height: 22px;
   border-radius: 0 4px 4px 0;
