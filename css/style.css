@@ -667,12 +667,72 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.range-label {
+  display: flex;
+  width: 143px;
+  padding: 12px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.range-label:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-label:last-child {
+  /* border-left: none; */
+  border-left: 2px solid transparent;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-label:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.range-label:last-child:hover {
+  border-left: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-label:focus-within:not(:active) {
+  box-shadow: inset 0 0 0 3px #81b3d2,
+    0 0 0 3px #81b3d2;
+  z-index: 1;
+}
+
+.range-label:last-child:focus-within {
+  border-left: 2px solid #ffffff;
+}
+
+.range-label:active {
+  background-color: #756257;
+  border-color: #ffffff;
+}
+
 .range-input {
+  min-width: 95px;
+  padding: 0;
+  padding-right: 12px;
+  flex-grow: 1;
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
   background-color: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .range-input::placeholder {
@@ -685,8 +745,51 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  right: -10px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 #000000;
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+}
+
 .filter-buttons {
-  align-self: flex-end;
+  margin-top: 55px;
   margin-left: auto;
 }
 
