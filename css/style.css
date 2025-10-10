@@ -564,7 +564,7 @@ body {
 
 .breadcrumbs-link:focus-visible {
   outline: 3px solid #83b3d3;
-  outline-offset: 5px;
+  outline-offset: 2px;
 }
 
 .breadcrumbs-link:active {
