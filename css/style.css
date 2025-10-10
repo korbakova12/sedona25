@@ -888,10 +888,35 @@ body {
 }
 
 .product-stars {
-  width: 115px;
+  /* width: 115px; */
+  height: 17px;
+  margin: 0;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.product-star--one {
+  width: 18px;
+}
+
+.product-star--two {
+  width: 42px;
+}
+
+.product-star--three {
+  width: 66px;
+}
+
+.product-star--four {
+  width: 89px;
+}
+
+.product-star--five {
+  width: 107px;
 }
 
 .product-rating-wrapper {
