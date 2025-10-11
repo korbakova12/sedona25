@@ -197,6 +197,28 @@
       </svg>
     </a>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-booking">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group">
+          <label class="booking-label" for="booking-date-in">Дата заезда:</label>
+          <input class="booking-input booking-input-date" type="text" name="booking-date-in-field" id="booking-date-in"
+            placeholder="Укажите дату" value="27 апреля 2020">
+          <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
+        </div>
+        <div class="field-group">
+          <label class="booking-label" for="booking-date-out">Дата выезда:</label>
+          <input class="booking-input booking-input-date" type="text" name="booking-date-out-field" id="booking-date-out"
+            placeholder="Укажите дату" value="1 сентября 2021">
+          <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
