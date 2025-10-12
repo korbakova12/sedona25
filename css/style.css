@@ -1382,9 +1382,20 @@ body {
   text-transform: uppercase;
 }
 
+.booking-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.field-group:first-child,
+.field-group:nth-child(2) {
+  grid-column: 1 / -1;
+}
+
 .field-group {
   display: grid;
-  grid-template-columns: 155px 1fr;
+  grid-template-columns: 140px 1fr;
+  column-gap: 15px;
   align-items: center;
 }
 
@@ -1440,4 +1451,101 @@ body {
 
 .field-message-error {
   color: #ff5757;
+}
+
+.booking-input-quantity-wrapper {
+  display: flex;
+  width: 133px;
+  /* border-radius: 4px; */
+}
+
+.booking-input-adult,
+.booking-input-child {
+  width: 45px;
+  padding: 5px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.booking-input-adult::-webkit-outer-spin-button,
+.booking-input-adult::-webkit-inner-spin-button,
+.booking-input-child::-webkit-outer-spin-button,
+.booking-input-child::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.booking-decrease-button,
+.booking-increase-button {
+  width: 44px;
+  background-color: #f2f2f2;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.booking-decrease-button {
+  border-radius: 4px 0 0 4px;
+}
+
+.booking-increase-button {
+  border-radius: 0 4px 4px 0;
+
+}
+
+.booking-decrease-button::before,
+.booking-increase-button::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+.booking-decrease-button::before {
+  background-image: url("../images/modal/form-minus.svg");
+}
+
+.booking-increase-button::before {
+  background-image: url("../images/modal/form-plus.svg");
+}
+
+.booking-decrease-button:hover::before,
+.booking-increase-button:hover::before {
+  opacity: 1;
+}
+
+.booking-decrease-button:focus:not(:active)::before,
+.booking-increase-button:focus:not(:active)::before {
+  outline: 3px solid #83b3d3;
+  opacity: 1;
+}
+
+.booking-decrease-button:active::before,
+.booking-increase-button:active::before {
+  opacity: 0.2;
+}
+
+.booking-label-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.booking-form-button {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 10px;
 }
