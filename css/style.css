@@ -1097,6 +1097,7 @@ body {
 
 .in-favorites {
   background-color: #7db54f;
+  width: 143px;
 }
 
 .in-favorites:hover {
