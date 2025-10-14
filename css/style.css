@@ -473,6 +473,11 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.subscribe-input:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .input--error {
   outline: 2px solid #ff5757;
   outline-offset: -2px;
@@ -665,6 +670,9 @@ body {
 
 .control:active .control-input::before {
   background-color: rgba(255, 255, 255, 0.3);
+.control:has(.control-input:disabled) {
+  opacity: 0.1;
+  cursor: default;
 }
 
 .range-wrapper-inputs {
@@ -711,6 +719,11 @@ body {
 .range-label:active {
   background-color: #756257;
   border-color: #ffffff;
+}
+
+.range-label:has(.range-input:disabled) {
+  opacity: 0.1;
+  cursor: default;
 }
 
 .range-input {
@@ -788,6 +801,11 @@ body {
   outline: 2px solid #83b3d3;
 }
 
+.range-toggle:disabled {
+  background-color: #cbcbcb;
+  pointer-events: none;
+}
+
 .filter-buttons {
   margin-top: 55px;
   margin-left: auto;
@@ -825,6 +843,11 @@ body {
 
 .filter-button-reset:active {
   opacity: 0.3;
+}
+
+.filter-button-reset:disabled {
+  opacity: 0.1;
+  cursor: default;
 }
 
 /* Каталог */
@@ -872,6 +895,11 @@ body {
 
 .sorting-control:active {
   opacity: 0.3;
+}
+
+.sorting-control:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .show-button-list {
@@ -1181,6 +1209,11 @@ body {
 
 .pagination-select select:active {
   color: rgba(51, 51, 51, 0.3);
+}
+
+.pagination-select select:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 /* Подписка на внутренней странице */
