@@ -411,6 +411,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .booking-description {
@@ -470,6 +471,7 @@ body {
 .subscribe-input {
   flex-grow: 1;
   padding: 14px 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -842,6 +844,7 @@ body {
 }
 
 .filter-button-reset {
+  font-family: "PT Sans", "Arial", sans-serif;
   min-width: 191px;
   font-size: 18px;
   line-height: 23px;
@@ -1211,6 +1214,7 @@ body {
 .pagination-select select {
   width: 160px;
   padding: 12px 17px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
