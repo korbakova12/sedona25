@@ -884,6 +884,7 @@ body {
   color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-color: transparent;
   background-image: url("../images/catalog/sorting-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 18px right 18px;
@@ -1199,6 +1200,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
+  background-color: transparent;
   background-image: url("../images/catalog/sorting-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 20px right 20px;
