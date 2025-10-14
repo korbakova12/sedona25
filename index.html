@@ -130,7 +130,7 @@
       <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden"> Ваш E-Mail </label>
-        <input class="subscribe-input" type="text" name="email" placeholder="Ваш e-mail">
+        <input class="subscribe-input" type="text" name="email" placeholder="Ваш e-mail" required>
         <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
@@ -202,21 +202,18 @@
   </footer>
   <div class="modal-container modal-container-close">
     <div class="modal modal-booking">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="field-group">
           <label class="booking-label" for="booking-date-in">Дата заезда:</label>
           <input class="booking-input booking-input-date" type="text" name="booking-date-in-field" id="booking-date-in"
-            placeholder="Укажите дату" value="27 апреля 2020">
+            placeholder="Укажите дату" value="27 апреля 2020" required>
           <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
         </div>
         <div class="field-group">
           <label class="booking-label" for="booking-date-out">Дата выезда:</label>
           <input class="booking-input booking-input-date" type="text" name="booking-date-out-field"
-            id="booking-date-out" placeholder="Укажите дату" value="1 сентября 2021">
+            id="booking-date-out" placeholder="Укажите дату" value="1 сентября 2021" required>
           <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
         </div>
         <div class="field-group">
@@ -226,7 +223,7 @@
               <span class="visually-hidden">Уменьшить количество взрослых</span>
             </button>
             <input class="booking-input booking-input-adult" type="number" name="booking-adult-field" id="booking-adult"
-              value="2">
+              value="2" required>
             <button class="booking-increase-button" type="button">
               <span class="visually-hidden">Увеличить количество взрослых</span>
             </button>

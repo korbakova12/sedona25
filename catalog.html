@@ -128,11 +128,11 @@
             <legend class="filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper-inputs">
               <label class="range-label">
-                <input class="range-input" type="number" name="min-price" placeholder="0">
+                <input class="range-input" type="number" name="min-price" placeholder="0" value="0">
                 <span class="range-title">от</span>
               </label>
               <label class="range-label">
-                <input class="range-input" type="number" name="max-price" placeholder="9000">
+                <input class="range-input" type="number" name="max-price" placeholder="9000" value="9000">
                 <span class="range-title">до</span>
               </label>
             </div>
@@ -293,7 +293,6 @@
           <select name="pagination" for="pagination-select-field">
             <option value="4">4</option>
           </select>
-
         </form>
       </div>
     </section>
@@ -302,7 +301,7 @@
       <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden"> Ваш E-Mail </label>
-        <input class="subscribe-input" type="text" name="email" placeholder="Ваш e-mail">
+        <input class="subscribe-input" type="text" name="email" placeholder="Ваш e-mail" required>
         <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
