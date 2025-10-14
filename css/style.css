@@ -661,16 +661,18 @@ body {
   /* background-position: center; */
 }
 
-.control:hover .control-input::before {
-  background-color: rgba(255, 255, 255, 0.6);
+.control:hover {
+  opacity: 0.6;
 }
 
 .control-input:focus::before {
   outline: 3px solid #83b3d3;
 }
 
-.control:active .control-input::before {
-  background-color: rgba(255, 255, 255, 0.3);
+.control:active {
+  opacity: 0.3;
+}
+
 .control:has(.control-input:disabled) {
   opacity: 0.1;
   cursor: default;
@@ -699,7 +701,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.range-label:hover {
+.range-label:hover:not(:focus-within) {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1531,7 +1533,6 @@ body {
 
 .booking-increase-button {
   border-radius: 0 4px 4px 0;
-
 }
 
 .booking-decrease-button::before,
