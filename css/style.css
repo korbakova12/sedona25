@@ -489,6 +489,7 @@ body {
 
 .subscribe-button {
   min-width: 200px;
+  max-width: 300px;
   font-size: 20px;
   line-height: 22px;
   border-radius: 0 4px 4px 0;
