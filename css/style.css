@@ -1412,6 +1412,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 54px;
+  padding-right: 65px;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
