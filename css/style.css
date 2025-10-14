@@ -110,7 +110,7 @@ body {
 /* Шапка сайта */
 .main-navigation {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 1060px;
   margin: 0 auto;
 }
@@ -229,7 +229,7 @@ body {
   color: #ffffff;
   text-align: center;
   background-color: #7db54f;
-  border-radius: 50%;
+  border-radius: 100vw;
 }
 
 .user-navigation-button {
@@ -315,6 +315,12 @@ body {
   counter-increment: features 1;
 }
 
+.features-item img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
 .features-sublist {
   grid-column: 1 / -1;
   color: #333333;
@@ -392,6 +398,8 @@ body {
 
 /* Бронирование */
 .booking {
+  max-width: 800px;
+  margin: 0 auto;
   padding-top: 91px;
   padding-bottom: 93px;
   text-align: center;
@@ -426,6 +434,11 @@ body {
   text-align: center;
 }
 
+.subscribe-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .index-page .subscribe {
   padding: 94px 0;
   color: #ffffff;
@@ -452,7 +465,6 @@ body {
 .subscribe-form {
   display: flex;
   width: 800px;
-  margin: 0 auto;
 }
 
 .subscribe-input {
@@ -687,6 +699,7 @@ body {
 
 .range-label {
   display: flex;
+  justify-content: space-between;
   width: 143px;
   padding: 12px;
   border: 2px solid #ffffff;
@@ -732,7 +745,7 @@ body {
 }
 
 .range-input {
-  min-width: 95px;
+  max-width: 85px;
   padding: 0;
   padding-right: 12px;
   flex-grow: 1;
@@ -879,7 +892,7 @@ body {
 
 .sorting-control {
   width: 287px;
-  padding: 12px 19px;
+  padding: 12px 35px 12px 19px;
   font-family: inherit;
   font-size: 18px;
   line-height: 18px;
@@ -1154,6 +1167,7 @@ body {
   align-items: center;
   min-width: 55px;
   height: 55px;
+  padding: 10px;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 24px;
@@ -1241,6 +1255,7 @@ body {
 .page-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   /* display: flex; */
   /* justify-content: space-between; */
   width: 1056px;
