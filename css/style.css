@@ -1174,7 +1174,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 55px;
-  height: 55px;
+  min-height: 55px;
   padding: 10px;
   box-sizing: border-box;
   font-size: 20px;
