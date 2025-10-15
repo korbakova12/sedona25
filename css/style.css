@@ -893,6 +893,10 @@ body {
   text-transform: uppercase;
 }
 
+.sorting {
+  margin-right: 10px;
+}
+
 .sorting-control {
   width: 287px;
   padding: 12px 35px 12px 19px;
@@ -970,6 +974,7 @@ body {
 
 .show-button-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .product-list {
