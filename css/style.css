@@ -25,7 +25,6 @@ body {
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  /* padding: 0 40px; */
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -33,7 +32,6 @@ body {
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .visually-hidden {
@@ -106,11 +104,9 @@ body {
   background-color: #615048;
 }
 
-
 /* Шапка сайта */
 .main-navigation {
   display: flex;
-  /* align-items: center; */
   width: 1060px;
   margin: 0 auto;
 }
@@ -297,7 +293,6 @@ body {
 
 .features-item h3 {
   order: -1;
-  /* margin-bottom: 30px; */
 }
 
 .features-item h4 {
@@ -359,7 +354,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-column: 1 / -1;
-  /* grid-row: 1 / 2; */
   padding: 0;
   color: #ffffff;
   background-color: #83b3d3;
@@ -372,7 +366,6 @@ body {
   min-height: 384px;
   padding: 97px 75px 80px;
   box-sizing: border-box;
-  /* grid-column: 1 / 2; */
 }
 
 .features-content::before {
@@ -545,8 +538,6 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  /* display: flex;
-  align-items: center; */
   margin-right: 26px;
 }
 
@@ -684,7 +675,6 @@ body {
   height: 10px;
   background-color: #3f5e72;
   border-radius: 50%;
-  /* background-position: center; */
 }
 
 .control:hover {
@@ -723,7 +713,6 @@ body {
 }
 
 .range-label:last-child {
-  /* border-left: none; */
   border-left: 2px solid transparent;
   border-radius: 0 4px 4px 0;
 }
@@ -1036,7 +1025,6 @@ body {
 
 .product-title {
   margin: 0;
-  /* margin-bottom: 16px; */
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
@@ -1045,7 +1033,6 @@ body {
 .product-info {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 16px; */
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -1060,7 +1047,6 @@ body {
 }
 
 .product-stars {
-  /* width: 115px; */
   height: 17px;
   margin: 0;
   font-size: 18px;
@@ -1279,8 +1265,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  /* display: flex; */
-  /* justify-content: space-between; */
   width: 1056px;
   margin: 0 auto;
   padding: 40px 0 30px;
@@ -1545,7 +1529,6 @@ body {
 .booking-input-quantity-wrapper {
   display: flex;
   width: 133px;
-  /* border-radius: 4px; */
 }
 
 .booking-input-adult,
@@ -1573,8 +1556,6 @@ body {
 .booking-increase-button {
   width: 44px;
   background-color: #f2f2f2;
-  /* background-repeat: no-repeat;
-  background-position: center; */
   border: none;
   outline: none;
   cursor: pointer;
