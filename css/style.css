@@ -509,7 +509,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-
 /* Внутренняя страница. Шапка основного содежимого */
 .main-header {
   padding: 43px 72px 84px;
@@ -641,6 +640,7 @@ body {
 
 .control-input {
   position: relative;
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
   margin-right: 20px;
@@ -759,11 +759,13 @@ body {
   border: none;
   outline: none;
   box-sizing: border-box;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -913,6 +915,7 @@ body {
   background-image: url("../images/catalog/sorting-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 18px right 18px;
+  -webkit-appearance: none;
   appearance: none;
   outline: none;
 }
@@ -1226,6 +1229,7 @@ body {
   color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   background-image: url("../images/catalog/sorting-arrow.svg");
@@ -1549,6 +1553,7 @@ body {
 .booking-input-adult::-webkit-inner-spin-button,
 .booking-input-child::-webkit-outer-spin-button,
 .booking-input-child::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
