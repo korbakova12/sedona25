@@ -512,7 +512,7 @@ body {
 
 /* Внутренняя страница. Шапка основного содежимого */
 .main-header {
-  padding: 43px 72px 71px;
+  padding: 43px 72px 84px;
   color: #ffffff;
   background-color: #abd6ef;
   background-image: url("../images/catalog/catalog-background.jpg");
@@ -607,7 +607,7 @@ body {
   list-style-type: none;
 }
 
-.filter-item {
+.filter-item:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -827,7 +827,7 @@ body {
 }
 
 .filter-buttons {
-  margin-top: 61px;
+  align-self: flex-end;
   margin-left: auto;
 }
 
