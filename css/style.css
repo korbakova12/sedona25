@@ -313,7 +313,7 @@ body {
 
 .features-item img {
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
   align-self: center;
 }
 
@@ -1020,7 +1020,7 @@ body {
 .product-img {
   display: block;
   width: 100%;
-  height: auto;
+  object-fit: cover;
   margin-bottom: 16px;
 }
 
